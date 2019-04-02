@@ -28,7 +28,7 @@ resnet_v1_50/model.ckpt-49800
 '''
 
 #写文件夹名称
-module_file =  tf.train.latest_checkpoint('inception_v1')
+module_file =  tf.train.latest_checkpoint('../models/inception_v1')
 print('module_file',module_file)
 
 
@@ -37,7 +37,7 @@ tf.flags.DEFINE_string(
 tf.flags.DEFINE_string(
     'input_dir', 'F:\\陶士来文件\\tsl_python_project\\model_datas\\tianchi_ijcai\\IJCAI_2019_AAAC_dev_data\\dev_data', 'Input directory with images.')
 tf.flags.DEFINE_string(
-    'output_dir', 'output_res', 'Output directory with images.')
+    'output_dir', '../output_res', 'Output directory with images.')
 tf.flags.DEFINE_integer(
     'image_width', 224, 'Width of each input images.')
 tf.flags.DEFINE_integer(
